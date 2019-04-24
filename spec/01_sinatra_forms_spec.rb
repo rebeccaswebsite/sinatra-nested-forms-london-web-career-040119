@@ -22,7 +22,7 @@ describe "FormsLab::App" do
       expect(last_response.status).to eq(200)
     end
 
-    it "renders a new form element on the page" do
+    it "renders a new form element on the page" do 
       expect(last_response.body).to include("<form")
       expect(last_response.body).to include("</form>")
     end
